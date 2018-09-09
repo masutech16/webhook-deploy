@@ -2,7 +2,7 @@ const http = require('http')
 const {spawn, execSync} = require('child_process')
 
 const createHandler = require('github-webhook-handler')
-const handler = createHandler({path: '/', secret: process.env.SECRET || 'test'})
+const handler = createHandler({path: '/', secret: "secret"})
 
 const server = http.createServer((req, res) => {
   handler(req, res, err => {
