@@ -4,4 +4,4 @@
 cd /home/isucon/app
 git pull origin master
 make
-systemctl restart [service]
+sudo systemctl restart [service]
