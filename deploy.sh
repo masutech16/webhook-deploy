@@ -4,4 +4,4 @@
 cd /home/isucon/app
 git pull origin master
 make
-sudo systemctl restart [service]
+echo "$ROOT_PASSWORD" | sudo -S systemctl restart [service]
